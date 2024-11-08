@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray900}">
+    
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10">
+        <Label 
+        Text="Sobre"
+        HorizontalOptions="CenterAndExpand"
+        FontFamily="Kalam"
+        FontSize="50"
+        TextColor="MediumPurple"/>
+        
+        <Frame Padding="10"
+               BackgroundColor="{StaticResource Gray900}"
+               BorderColor="{StaticResource Gray900}">
+            <VerticalStackLayout Padding="10"
+                                 Margin="10">
+        
+
+        <Frame Padding="10"
+               BackgroundColor="MediumPurple"
+               BorderColor="Black"
+               CornerRadius="30">
+            
+            <Grid RowDefinitions="Auto, Auto"
+                  ColumnDefinitions="*, *">                
+            
+            <Label Grid.Row="0" Grid.Column="0"
+                TextColor="Purple"
+                Padding="5"
+                Margin="10"
+                Text="Atividade Interativa"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+
+            <Label Grid.Row="0" Grid.Column="1"
+                
+                TextColor="Purple"
+                Padding="5"
+                Margin="10"
+                Text="Agenda 14 Desenvolvimento de Sistemas"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand"/>
+            </Grid>
+        </Frame>
+
+        <Frame Padding="10"
+               BackgroundColor="MediumPurple"
+               BorderColor="Black"
+               CornerRadius="30">
+            
+            <VerticalStackLayout>
+                
+                <Grid RowDefinitions="Auto, Auto, Auto"
+                      ColumnDefinitions="*, *">
+
+            <Label Grid.Row="0" Grid.Column="0"
+                TextColor="Purple"
+                Text="Nome do Desenvolvedor:"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand"/>
+                    
+            <Label Grid.Row="0" Grid.Column="1"
+                Margin="10"
+                TextColor="Purple"
+                Text="Leonardo Martinez"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand"/>
+
+            <Label Grid.Row="1" Grid.Column="0"
+                TextColor="Purple"
+                Text="Ano de Produçao:"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand"/>
+
+            <Label Grid.Row="1" Grid.Column="1"
+                 Margin="10"
+                TextColor="Purple"
+                Text="2024"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand"/>
+
+                </Grid>
+                
+            </VerticalStackLayout>
+            
+        </Frame>
+
+        <Button x:Name="VoltarTela"
+                BorderColor="Black"
+                CornerRadius="20"
+            Text="Voltar"
+            Margin="10"
+            Padding="10"
+            Clicked="VoltarTela_Clicked">
+        </Button>
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+
+    
+        
+    
+    
+</ContentPage>
